@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.6.2/swiper-bundle.min.css" />
+</head>
+<body>
+    <header>
+        <div class="logo">Aszael.Ram</div>
+        <nav>
+            <ul>
+                <li><a href="https://github.com/Aszelram?fbclid=PAZXh0bgNhZW0CMTEAAabsAPRAHuva049Vie_PJVf3u5gdgoADgXYGX2P513v8i4_FLgVtFfXrHdI_aem_AQ0ysj4cXQ5UHf7kUCVb0vtE32P1gNwB1AqBpqxYVfrv3UoBdvF2YYcFAjpVSt0ItUEV4GJYROIEHc4UiedciaGY" id="github-link"><i class="fab fa-github"></i> Github</a></li>
+                <li><a href="https://id.linkedin.com/in/asep-zaelani-ramdhan-560b16118" id="linkedin-link"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
+                <li><a href="#" id="contact-link"><i class="fas fa-envelope"></i> Contact</a></li>
+                <li><a href="#" id="skill-link"><i class="fas fa-laptop-code"></i> Skill</a></li>
+                <li><a href="#" id="portfolio-link"><i class="fas fa-briefcase"></i> Portfolio</a></li>
+            </ul>
+        </nav>
+        <button id="mode-toggle" class="btn"><i class="fas fa-sun"></i></button>
+    </header>
+    <section id="info-section" class="info-section">
+        <div id="contact-details" class="detail-item" style="display: none;">
+            <button class="close-btn">&times;</button>
+            <h3>Contact Me</h3>
+            <p><i class="fas fa-envelope"></i> zaelaniram@gmail.com</p>
+        </div>
+        <div id="skill-details" class="detail-item" style="display: none;">
+            <button class="close-btn">&times;</button>
+            <h3>My Skills</h3>
+            <ul>
+                <li>HTML & CSS</li>
+                <li>PHP</li>
+                <li>MySQL</li>
+                <li>JavaScript</li>
+                <li>Oracle</li>
+                <li>MongoDB</li>
+                <li>React JS</li>
+            </ul>
+        </div>
+        <div id="portfolio-details" class="detail-item" style="display: none;">
+            <button class="close-btn">&times;</button>
+            <h3>My Portfolio</h3>
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="1.png" alt="Portfolio 1"></div>
+                    <div class="swiper-slide"><img src="2.png" alt="Portfolio 2"></div>
+                    <div class="swiper-slide"><img src="3.png" alt="Portfolio 3"></div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </section>
+    <section class="hero">
+        <div class="container">
+            <div class="intro">
+                <h1>Holla!</h1>
+                <h2>Asep Zaelani Ramdhan</h2>
+                <p>Frontend Developer</p>
+                <p><i class="fas fa-map-marker-alt"></i> West Java, Sukabumi</p>
+                <a href="https://www.instagram.com/aszael.ram?utm_source=qr&igsh=MWZ5cmpxNGh6eXR4" class="btn">Instagram</a>
+            </div>
+            <div class="profile-pic">
+                <img src="aq.jpg" alt="Aszael.Ram">
+            </div>
+        </div>
+                <div id="content" class="details">
+            <div class="detail-item">
+                <h3>Associate Degree, Informatics Management</h3>
+                <p>Copyright © 2024 Asep Zaelani Ramdhan</p>
+            </div>
+            <div class="detail-item">
+                <h3>Why Hire Me for Your Next Project?</h3>
+                <p> I approach every project with a fresh perspective, looking for unique and creative solutions to complex problems. This means your project will benefit from innovative ideas that are tailored specifically to your needs.</p>
+                <a href="#" class="btn">Learning By Doing</a>
+            </div>
+        </div>
+    </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.6.2/swiper-bundle.min.js"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>

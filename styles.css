@@ -1,0 +1,232 @@
+:root {
+    --bg-color: #ffffff;
+    --text-color: #333333;
+    --primary-color: #ee19b9; /* Light Mode Primary Color */
+    --btn-bg-color: #ff42ef;
+    --btn-text-color: #333333;
+    --close-btn-color: #333333; /* Light mode close button color */
+}
+
+body.dark-mode {
+    --bg-color: #333333;
+    --text-color: #ffffff;
+    --primary-color: #ee19b9; /* Dark Mode Primary Color */
+    --btn-bg-color: #ff42ef;
+    --btn-text-color: #333333;
+    --close-btn-color: #ffffff; /* Dark mode close button color */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: var(--primary-color);
+    flex-wrap: wrap;
+}
+
+header .logo {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+header nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+header nav ul li {
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    font-size: 20px; /* Increase font size */
+}
+
+header nav ul li a i {
+    margin-right: 8px;
+    font-size: 1.5em; /* Adjust icon size */
+}
+
+header .btn {
+    background-color: var(--btn-bg-color);
+    color: var(--btn-text-color);
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 22px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+}
+
+header .btn i {
+    font-size: 1.4em; /* Adjust icon size */
+}
+
+.hero {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.intro {
+    flex: 1 1 300px;
+}
+
+.intro h1 {
+    font-size: 48px;
+    color: var(--primary-color);
+}
+
+.intro h2 {
+    font-size: 36px;
+    margin: 10px 0;
+}
+
+.intro p {
+    font-size: 18px;
+}
+
+.intro p i {
+    margin-right: 8px; /* Margin for the location icon */
+}
+
+.intro .btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: var(--btn-bg-color);
+    color: var(--btn-text-color);
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.profile-pic {
+    flex: 1 1 100px;
+    text-align: center;
+}
+
+.profile-pic img {
+    max-width: 50%;
+    height: auto;
+    border-radius: 50%;
+}
+
+.details {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.detail-item {
+    flex: 1 1 45%;
+    background-color: var(--bg-color);
+    padding: 20px;
+    margin: 10px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.detail-item h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: var(--primary-color);
+}
+
+.detail-item p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.detail-item ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.detail-item ul li {
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.detail-item .btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: var(--btn-bg-color);
+    color: var(--btn-text-color);
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.info-section {
+    display: none;
+    padding: 20px;
+    background-color: var(--bg-color);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.info-section .detail-item {
+    display: none;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: var(--close-btn-color); /* Use variable for close button color */
+}
+
+.swiper-container {
+    width: 50%;
+    height: 50%;
+    margin-top: 20px;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
