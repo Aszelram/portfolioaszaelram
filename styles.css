@@ -61,7 +61,7 @@ header nav ul li a {
 
 header nav ul li a i {
     margin-right: 8px;
-    font-size: 1.2em; /* Adjusted icon size */
+    font-size: 1.9em; /* Adjusted icon size */
 }
 
 header .btn {
@@ -70,14 +70,14 @@ header .btn {
     border: none;
     padding: 10px;
     cursor: pointer;
-    font-size: 22px;
-    border-radius: 5px;
+    font-size: 20px;
+    border-radius: 50%;
     display: flex;
     align-items: center;
 }
 
 header .btn i {
-    font-size: 1.4em; /* Adjusted icon size */
+    font-size: 1.1em; /* Adjusted icon size */
 }
 
 .hero {
@@ -93,7 +93,7 @@ header .btn i {
 }
 
 .intro {
-    flex: 1 1 300px;
+     flex: 1 1 50%; /* Ambil setengah lebar pada mode responsif */
 }
 
 .intro h1 {
@@ -102,12 +102,12 @@ header .btn i {
 }
 
 .intro h2 {
-    font-size: 28px;
-    margin: 10px 0;
+    font-size: 8px;
+    margin: 10px;
 }
 
 .intro p {
-    font-size: 16px;
+    font-size: 11px;
 }
 
 .intro p i {
@@ -126,9 +126,8 @@ header .btn i {
 }
 
 .profile-pic {
-    flex: 1 1 100px;
-    text-align: center;
-    margin-top: 20px; /* Add margin to separate from Instagram button */
+    flex: 1 1 50%;
+    text-align: right; /* Posisikan foto profil ke kanan */
 }
 
 .profile-pic img {
@@ -154,13 +153,13 @@ header .btn i {
 }
 
 .detail-item h3 {
-    font-size: 24px;
+    font-size: 10px;
     margin-bottom: 10px;
     color: var(--primary-color);
 }
 
 .detail-item p {
-    font-size: 16px;
+    font-size: 8px;
     line-height: 1.6;
 }
 
@@ -171,7 +170,7 @@ header .btn i {
 
 detail-item ul li {
     margin-bottom: 10px;
-    font-size: 18px;
+    font-size: 1px;
 }
 
 .detail-item .btn {
@@ -203,7 +202,7 @@ detail-item ul li {
     right: 10px;
     background: none;
     border: none;
-    font-size: 24px;
+    font-size: 20px;
     cursor: pointer;
     color: var(--close-btn-color); /* Use variable for close button color */
 }
@@ -216,7 +215,7 @@ detail-item ul li {
 
 .swiper-slide {
     text-align: center;
-    font-size: 18px;
+    font-size: 10px;
     background: #fff;
 
     /* Center slide text vertically */
@@ -264,11 +263,11 @@ detail-item ul li {
     }
 
     .intro h1 {
-        font-size: 20px; /* Adjust font size */
+        font-size: 29px; /* Adjust font size */
     }
 
     .intro h2 {
-        font-size: 15px; /* Adjust font size */
+        font-size: 13px; /* Adjust font size */
     }
 
     .intro p {
@@ -281,20 +280,22 @@ detail-item ul li {
     }
 
     .profile-pic img {
-        max-width: 50%; /* Adjust profile picture size */
-        margin-top: 10px; /* Ensure profile pic does not overlap Instagram button */
-    }
-
-    .details {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .detail-item {
-        flex: 1 1 100%; /* Full width on mobile */
-    }
-
-    .swiper-container {
-        height: 200px; /* Adjust height for better mobile view */
-    }
+    max-width: 50%; /* Adjust profile picture size */
+    margin-top: 10px; /* Ensure profile pic does not overlap Instagram button */
 }
+
+.details {
+    flex-direction: column;
+    align-items: center;
+}
+
+.detail-item {
+    flex: 1 1 100%; /* Full width on mobile */
+    font-size: 9px;
+}
+
+.swiper-container {
+    height: 200px; /* Adjust height for better mobile view */
+}
+}
+
